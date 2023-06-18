@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="./src/index.js"></script>
+  </head>
+
+  <body>
+    <main id="family-tree"></main>
+    <script type="text/javascript">
+      let tree = {
+        0: {
+          16: {
+            5: "",
+            4: {
+              1: "",
+              2: "",
+              3: "",
+            },
+          },
+          17: {
+            4: "",
+            5: "",
+          },
+          18: {
+            6: {
+              1: "",
+              2: "",
+              3: "",
+            },
+            7: "",
+            8: { 9: "" },
+          },
+          19: {
+            6: "",
+            7: "",
+            8: "",
+          },
+          14: { 10: "", 11: { 12: "", 13: "" } },
+          15: { 10: "", 11: "" },
+        },
+      };
+
+      treeMaker(tree, {
+        id: "family-tree",
+        link_width: "4px",
+        link_color: "#2199e8",
+      });
+    </script>
+  </body>
+</html>
